@@ -1,0 +1,44 @@
+/* ONGLET */
+ul.Onglet 
+{
+    margin:0px;
+	padding:0px;
+}      
+
+ul.Onglet li
+{
+    display:inline;
+}
+
+.Onglet button
+{
+	height:52px;
+	width:53px;
+}
+
+.Onglet img
+{
+    margin-left: -6px;
+    margin-top: -2px;
+}
+
+.Onglet div
+{
+	background-color:#ffffff;
+	width:52px;
+	height:10px;
+}
+
+@-moz-document url-prefix()
+{
+	.Onglet button	
+	{
+		height:50px;
+		width:50px;
+	}
+	
+	.Onglet div
+	{
+		width:50px;
+	}
+}

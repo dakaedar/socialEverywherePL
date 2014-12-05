@@ -1,0 +1,18 @@
+/* MENU */
+body
+{
+  font-family: tahoma,arial,helvetica,sans-serif;
+}
+
+#Menu 
+{
+    width: 600px;
+	height: 412px;
+	background-color:#636d76;
+    padding:6px;
+}
+
+div
+{
+    font-size: 13px;
+}
