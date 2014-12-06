@@ -1,5 +1,5 @@
-/*ONGLET MENU */
 
+	/*ONGLET MENU */
 	document.getElementById("ongletFriend").onclick=function activateFriend()
 	{
 		$('#ongletChat').removeClass('active');
@@ -58,21 +58,23 @@
 		else if($("#ongletRoom #room5").css('display') == 'none')
 			$("#ongletRoom #room5").css('display', 'table-cell');
 	}
-	
-	document.getElementById("friendProfil").onclick=function friendProfil()
+		
+	document.getElementById('room2button').onclick=function deleteRoom()
 	{
-		$('#ongletChat').removeClass('active');
-		$('#contentChat').css('display', 'none');
-		$('#ongletFriend').removeClass('active');
-		$('#contentFriend').css('display', 'none');
-		$('#ongletProfil').addClass('active');
-		$('#contentProfil').css('display', 'block');
-	
-		$('#contentProfil textarea').css('display', 'none');
-		$('#contentProfil button').css('display', 'none');
+		$('#room2').css('display', 'none');
 	}
 	
-	document.getElementById("deleteFriend").onclick=function deleteFriend()
+	document.getElementById('room3button').onclick=function deleteRoom()
 	{
-		deleteById('friend1');
+		$('#room3').css('display', 'none');
+	}
+	
+	document.getElementById('room4button').onclick=function deleteRoom()
+	{
+		$('#room4').css('display', 'none');
+	}
+	
+	document.getElementById('room5button').onclick=function deleteRoom()
+	{
+		$('#room5').css('display', 'none');
 	}

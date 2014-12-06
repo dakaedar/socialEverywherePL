@@ -88,10 +88,11 @@
 	background-color:#ffffff;
 }
 
-#ongletRoom li div
+#ongletRoom li img
 {
-	padding-top:8px;
-	padding-left:25px;
+	width: 98px;
+	height: 27px;
+	margin: 2px;
 }
 
 #contentChat #sendMsgButton
@@ -109,6 +110,14 @@
 
 #contentChat button
 {
+	position: absolute;
+	margin-left: 77px;
+	margin-top: -32px;
+}
+
+#contentChat #addRoom
+{
+	position: inherit;
 	float: right;
 	margin-right: 30px;
     margin-top: -26px;
@@ -153,6 +162,30 @@
 	left:-1px;
 }
 
+.contact div
+{
+	display: none;
+}
+
+#contentChat .contact button
+{
+	margin-left:120px;
+}
+
+#contentChat .contact #addContact
+{
+	margin-left: 132px;
+	margin-top: -41px;
+}
+
+#contentChat #contactRoom2,
+#contentChat #contactRoom3,
+#contentChat #contactRoom4,
+#contentChat #contactRoom5
+{
+	display: none;
+}
+
 @media screen and (-webkit-min-device-pixel-ratio:0)
 {
 	#contentChat div div
@@ -181,9 +214,8 @@
 	}
 }
 
-/* other Onglet chat */
-
-#ongletRoom #room2, #ongletRoom #room3, #ongletRoom #room4, #ongletRoom #room5{
+#ongletRoom #room2, #ongletRoom #room3, #ongletRoom #room4, #ongletRoom #room5
+{
 	display: none;
 }
 
@@ -269,6 +301,7 @@
 	margin-left: 470px;
     margin-right: 5px;
     margin-top: 57.5px;
+	height:32px;
 }
 
 #contentProfil textarea
@@ -278,12 +311,4 @@
     resize: none;
 	height: 29px;
     width: 465px;
-}
-
-@-moz-document url-prefix()
-{
-	#contentProfil textarea
-	{
-		height:32px;
-	}
 }

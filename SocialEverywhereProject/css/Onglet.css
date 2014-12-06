@@ -42,3 +42,8 @@ ul.Onglet li
 		width:50px;
 	}
 }
+
+#chatRoom2, #chatRoom3, #chatRoom4, #chatRoom5
+{
+	display: none;
+}

@@ -22,42 +22,61 @@
 
 			<!--CHAT-->
     	    <div id="contentChat" class="content">
-            	<p class="chatRoom">Zone de chat</p>
-                <div class="contact">
-    	           	<img src="img/photoProfil.jpg" alt="Photo contact" width="20" height="20">
-	                <span>Contact name</span>
-                    <button>+</button><br>
-       	           	<img src="img/photoProfil.jpg" alt="Photo contact" width="20" height="20">
-	                <span>Contact name</span>
-                    <button>+</button><br>
+            	<p id="chatRoom1" class="chatRoom">Chat zone</p>
+            	<p id="chatRoom2" class="chatRoom">Private room 2</p>
+            	<p id="chatRoom3" class="chatRoom">Private room 3</p>
+            	<p id="chatRoom4" class="chatRoom">Private room 4</p>
+            	<p id="chatRoom5" class="chatRoom">Private room 5</p>
+                <div class="contact" id="contactRoom1">
                 	<div>
                     	<textarea maxlength="14" id="contactName"></textarea>
                			<button id="addContact">+</button>
                     </div>
 				</div>
+                <div class="contact" id="contactRoom2">
+                	<div>
+                    	<textarea maxlength="14" id="contactName"></textarea>
+               			<button id="addContact">+</button>
+                    </div>
+				</div>
+                <div class="contact" id="contactRoom3">
+                	<div>
+                    	<textarea maxlength="14" id="contactName"></textarea>
+               			<button id="addContact">+</button>
+                    </div>
+				</div>
+                <div class="contact" id="contactRoom4">
+                	<div>
+                    	<textarea maxlength="14" id="contactName"></textarea>
+               			<button id="addContact">+</button>
+                    </div>
+				</div>
+                <div class="contact" id="contactRoom5">
+                	<div>
+                    	<textarea maxlength="14" id="contactName"></textarea>
+               			<button id="addContact">+</button>
+                    </div>
+				</div>
+
                 <button id="sendMsgButton"><img src="img/sendMsg.jpg" alt="send msg image"/></button>
-               	<textarea maxlength="300" id="textZone">Text utilisateur</textarea>
+               	<textarea maxlength="300" id="textZone">User text</textarea>
                 <ul id="ongletRoom">
-                   	<li><div>Room 1</div></li>
+                   	<li><img id="displayRoom1" src="" alt="Room1"/></li>
 					<li id="room2">
-						<div>Room 2
-							<button id="room2button" class="deleteRoom">x</button>
-						</div>
+                    	<img id="displayRoom2" src="" alt="Room2"/>
+						<button id="room2button" class="deleteRoom">x</button>
 					</li>
 					<li id="room3">
-						<div>Room 3
-							<button id="room3button" class="deleteRoom">x</button>
-						</div>
+                    	<img id="displayRoom3" src="" alt="Room3"/>
+						<button id="room3button" class="deleteRoom">x</button>
 					</li>
 					<li id="room4">
-						<div>Room 4
-							<button id="room4button" class="deleteRoom">x</button>
-						</div>
+                    	<img id="displayRoom4" src="" alt="Room4"/>
+						<button id="room4button" class="deleteRoom">x</button>
 					</li>
 					<li id="room5">
-						<div>Room 5
-							<button id="room5button" class="deleteRoom">x</button>
-						</div>
+                    	<img id="displayRoom5" src="" alt="Room5"/>
+						<button id="room5button" class="deleteRoom">x</button>
 					</li>
                 </ul>
                 <button id="addRoom">+</button>
@@ -66,6 +85,13 @@
 			<!--FRIEND LIST-->
         	<div id="contentFriend" class="content">
             	<div id="friend1">
+    	            <img src="img/photoProfil.jpg" alt="Photo friend">
+                   	<span class="friendName">Friend Name</span>
+       	    		<span class="friendCountry">Country</span>
+                    <button id="friendProfil" class="friendProfil">Profil</button>
+                    <button id="deleteFriend" class="deleteFriend">-</button>
+        	    </div>
+               	<div id="friend2">
     	            <img src="img/photoProfil.jpg" alt="Photo friend">
                    	<span class="friendName">Friend Name</span>
        	    		<span class="friendCountry">Country</span>
