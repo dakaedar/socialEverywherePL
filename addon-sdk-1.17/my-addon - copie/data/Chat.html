@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>Social everywhere</title>
+		<link rel="stylesheet" href="css/Chat.css" />
+		<link rel="stylesheet" href="css/Onglet.css" />
+		<link rel="stylesheet" href="css/Content.css" />
+	</head>
+	
+    <body>
+	<div id="Menu">
+	    <div>
+
+ 			<!--ONGLET MENU-->
+    	    <ul class="Onglet">
+        	    <li><button id="ongletChat" class="active"><img src="img/chat.jpg" alt="chat"/></button></li>
+            	<li><button id="ongletFriend"><img src="img/chat.jpg" alt="friend"/></button></li>
+            	<li><button id="ongletProfil"><img src="img/chat.jpg" alt="profil"/></button></li>
+                <li><div></div></li>
+  	      	</ul>
+
+			<!--CHAT-->
+    	    <div id="contentChat" class="content">
+            	<p class="chatRoom">Zone de chat</p>
+                <div class="contact">
+    	           	<img src="img/photoProfil.jpg" alt="Photo contact" width="20" height="20">
+	                <span>Contact name</span>
+                    <button>+</button><br>
+       	           	<img src="img/photoProfil.jpg" alt="Photo contact" width="20" height="20">
+	                <span>Contact name</span>
+                    <button>+</button><br>
+                	<div>
+                    	<textarea maxlength="14" id="contactName"></textarea>
+               			<button id="addContact">+</button>
+                    </div>
+				</div>
+                <button id="sendMsgButton"><img src="img/sendMsg.jpg" alt="send msg image"/></button>
+               	<textarea maxlength="300" id="textZone">Text utilisateur</textarea>
+                <ul id="ongletRoom">
+                   	<li><div>Room 1</div></li>
+					<li id="room2">
+						<div>Room 2
+							<button id="room2button" class="deleteRoom">x</button>
+						</div>
+					</li>
+					<li id="room3">
+						<div>Room 3
+							<button id="room3button" class="deleteRoom">x</button>
+						</div>
+					</li>
+					<li id="room4">
+						<div>Room 4
+							<button id="room4button" class="deleteRoom">x</button>
+						</div>
+					</li>
+					<li id="room5">
+						<div>Room 5
+							<button id="room5button" class="deleteRoom">x</button>
+						</div>
+					</li>
+                </ul>
+                <button id="addRoom">+</button>
+        	</div>
+
+			<!--FRIEND LIST-->
+        	<div id="contentFriend" class="content">
+            	<div id="friend1">
+    	            <img src="img/photoProfil.jpg" alt="Photo friend">
+                   	<span class="friendName">Friend Name</span>
+       	    		<span class="friendCountry">Country</span>
+                    <button id="friendProfil" class="friendProfil">Profil</button>
+                    <button id="deleteFriend" class="deleteFriend">-</button>
+        	    </div>
+        	</div>
+
+			<!--FROFIL-->
+       	 	<div id="contentProfil" class="content">
+            	<img src="img/photoProfil.jpg" alt="Photo profil" width="80" height="80">
+          	    <p>Name : <span id="nameProfil"></span></p>
+                <p>Country : <span id="countryProfil"></span></p>
+                <p>Description : <span id="descriptionProfil"></span></p>
+                <textarea maxlength="80" id="description">New description (80 characters max)</textarea>           
+                <button id="changeDescription">Change description</button>
+    		</div>
+            
+    	</div>
+	</div>
+    </body>
+	
+	<script src="js/ongletManager.js"></script>
+    <script src="js/Chat.js"></script>
+    <script src="js/jQuery.js"></script>
+</html>

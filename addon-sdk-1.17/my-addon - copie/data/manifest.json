@@ -1,0 +1,15 @@
+{
+  "manifest_version": 2,
+
+  "name": "Social Everywhere",
+  "description": "This extension allows users to meet and discuss with other users with same interests",
+  "version": "1.0",
+
+  "permissions": [
+	"http://*.google.com/"
+  ],
+  "browser_action": {
+    "default_icon": "icon.png",
+    "default_popup": "chat.html"
+  }
+}

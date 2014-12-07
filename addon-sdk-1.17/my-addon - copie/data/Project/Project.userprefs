@@ -1,0 +1,17 @@
+﻿<Properties>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Script\IM_IA_SoldierYellow.cs">
+    <Files>
+      <File FileName="Assets\Script\IM_IA_SoldierYellow.cs" Line="69" Column="31" />
+      <File FileName="Assets\Script\IM_IA_SoldierRed.cs" Line="70" Column="31" />
+      <File FileName="Assets\Script\IM_Rocket.cs" Line="1" Column="1" />
+      <File FileName="Assets\Script\IM_Manager.cs" Line="1" Column="1" />
+      <File FileName="Assets\Script\IM_Lazer.cs" Line="16" Column="7" />
+      <File FileName="Assets\Script\IA_Kamikaze.cs" Line="36" Column="26" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>

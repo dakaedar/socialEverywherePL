@@ -1,0 +1,40 @@
+<html lang="fr">
+    <head>
+            <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+                <link href="./inxcription.css" rel="stylesheet" type="text/css">
+            </head>
+            <body>
+                <div id="page">
+                <div>
+                    <img alt="" src="bubble.png">
+                        <img alt="" src="sticktech-logo.png">
+                    </div>
+                <div id="form">
+                    <form id="reg" onsubmit="post" name="reg" method="post">
+                        <input type="text" aria-label="Firstname" id="1" placeholder="" aria-required="1" value="firstname" name="firstname" data-type="text">
+                            </br>
+                            <input type="text" aria-label="Name" id="2" placeholder="" aria-required="1" value="name" name="name" data-type="text">
+                                </br>
+                                <input type="text" id="3" placeholder="" aria-required="1" value="description" name="describe yourself" data-type="text">
+                                        </br>
+                                    <img id="uploadPreview" src ="profil.jpg" style="width: 100px; height: 100px;" />
+                                    </br>
+                                    <input id="uploadImage" type="file" name="myPhoto" onchange="PreviewImage();" onclick="this.parentNode.reset();"/>
+                                    </br>
+                                    <script type="text/javascript">
+                                        
+                                        function PreviewImage() {
+                                            var oFReader = new FileReader();
+                                            oFReader.readAsDataURL(document.getElementById("uploadImage").files[0]);
+                                            
+                                            oFReader.onload = function (oFREvent) {
+                                                document.getElementById("uploadPreview").src = oFREvent.target.result;
+                                            };
+                                        };
+                                    
+                                        </script>
+                                <button id="5" name="websubmit" class="incription" type="submit">Inscription</button>
+                        </form>
+                    </div>
+                </div>
+</body>
