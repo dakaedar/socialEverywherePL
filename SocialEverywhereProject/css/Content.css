@@ -92,7 +92,7 @@
 {
 	width: 98px;
 	height: 27px;
-	margin: 2px;
+	margin: 29px;
 }
 
 #contentChat #sendMsgButton
@@ -111,8 +111,8 @@
 #contentChat button
 {
 	position: absolute;
-	margin-left: 77px;
-	margin-top: -32px;
+    margin-left: -25px;
+    margin-top: 13px
 }
 
 #contentChat #addRoom
@@ -172,10 +172,13 @@
 	margin-left:120px;
 }
 
-#contentChat .contact #addContact
+#contentChat .contact #addContact1,
+#contentChat .contact #addContact2,
+#contentChat .contact #addContact3,
+#contentChat .contact #addContact4,
+#contentChat .contact #addContact5
 {
-	margin-left: 132px;
-	margin-top: -41px;
+	margin:0;
 }
 
 #contentChat #contactRoom2,
@@ -188,6 +191,17 @@
 
 @media screen and (-webkit-min-device-pixel-ratio:0)
 {
+	#contentChat button
+	{
+		margin-left: 77px;
+		margin-top: -32px;
+	}
+	
+	#ongletRoom li img
+	{
+		margin: 2px;
+	}
+	
 	#contentChat div div
 	{
 		bottom:-3px;
@@ -211,6 +225,16 @@
 	{
 		height: 83px;
 		width: 84px;
+	}
+	
+	#contentChat .contact #addContact1,
+	#contentChat .contact #addContact2,
+	#contentChat .contact #addContact3,
+	#contentChat .contact #addContact4,
+	#contentChat .contact #addContact5
+	{
+		margin-left: 132px;
+		margin-top: -41px;
 	}
 }
 
